@@ -1,0 +1,41 @@
+{
+  "name": "bloom",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "http-errors": "~1.6.3",
+    "mongoose": "^6.5.0",
+    "morgan": "~1.9.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pug": "2.0.0-beta11",
+    "session": "^0.1.0"
+  },
+  "description": "An anonymous message board developed using express.js and passport.js.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanshshekhar11/bloom.git"
+  },
+  "keywords": [
+    "authentication"
+  ],
+  "author": "Shivansh Shekhar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/shivanshshekhar11/bloom/issues"
+  },
+  "homepage": "https://github.com/shivanshshekhar11/bloom#readme"
+}

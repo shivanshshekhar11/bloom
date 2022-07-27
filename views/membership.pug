@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+
+    h3 Enter the passcode provided on your membership card
+    p In case of no membership card, contact the club owner. 
+
+    form(method='POST' action='')
+
+      div.form-group
+        label(for='password') Password:
+        input#password.form-control(type='password' name='password')
+
+      button.btn.btn-primary(type='submit') Submit
+
+    if err 
+      p #{err}
