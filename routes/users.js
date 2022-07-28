@@ -71,11 +71,13 @@ router.get("/:username/delete", function(req, res, next){
         
             Post.deleteMany({'author': quser[0]._id })
                 .exec(function(err) {
-        
                     if (err) { return next(err); }
             });
 
-            User.deleteOne({username: quser[0].username});
+            User.deleteOne({username: quser[0].username})
+                .exec(function(err) {
+                    if (err) { return next(err); }
+            });
                 
             res.redirect("/users");
         }
