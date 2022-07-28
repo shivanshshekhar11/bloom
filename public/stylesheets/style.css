@@ -19,6 +19,7 @@ h1{
 }
 
 header {
+  background-color: #013277;
   position: fixed;
   top: 0;
   width: 100%;
@@ -40,7 +41,7 @@ footer {
 }
 
 #footergap{
-  height: 5em;
+  height: 175px;
 }
 
 #heading, nav, .part{
