@@ -19,7 +19,7 @@ router.get('/login', function(req, res, next) {
 /* POST login page. */
 router.post('/login', passport.authenticate("local", {
   successRedirect: "/posts",
-  failureRedirect: "/"
+  failureRedirect: "/login"   //*look-up
 }));
 
 /* GET signup page. */
@@ -87,7 +87,12 @@ router.get('/logout', function (req, res){
 });
 
 router.get("/membership", function(req, res, next){
-  res.render("membership", { title: "Membership" });
+  if(req.user.status==="user"){
+    res.render("membership", { title: "Membership" });
+  }
+  else{
+    res.redirect("/posts");
+  }
 })
 
 router.post("/membership", function(req, res, next){

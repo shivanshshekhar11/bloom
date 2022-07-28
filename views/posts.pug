@@ -7,6 +7,14 @@ block content
     a(href="/posts/new") Create a new post
     a(href="/logout") Log out
 
+  if user.status === "user"
+    p
+      a(href="/membership") Become a Member ...
+
+  unless user.status === "user"  
+    p 
+      a(href="/users") All Users
+
   ul#grid
     each post in post_list
       li.grid-items

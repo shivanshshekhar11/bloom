@@ -1,0 +1,29 @@
+extends layout
+
+block content
+
+  h1= title
+
+  p #{quser.firstName} #{quser.lastName}
+
+  div(style='margin-left:20px;margin-top:20px')
+
+    h3 Posts
+
+    ul#grid
+      each post in user_posts
+        li.grid-items
+          p#post-title
+            a(href=post.url) #{post.title}
+            
+          p #{post.content}
+
+          p #{post.time}
+
+      else
+        p This user has no posts
+
+  if user.status === "admin"
+    if quser.status !== "admin"
+      p
+        a(href=quser.url+'/delete') Delete User

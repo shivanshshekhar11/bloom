@@ -55,4 +55,18 @@ router.get("/:id", function(req, res, next) {
     })
 });
 
+router.get("/:id/delete", function(req, res, next) {
+    if(req.user.status === "admin"){
+    
+        Post.findByIdAndRemove(req.params.id, function deletePost(err) {
+            if (err) { return next(err); }
+            // Success - go to posts list
+            res.redirect('/posts');
+        })
+
+    } else {
+        res.redirect('/posts');
+    }
+});
+
 module.exports = router;
