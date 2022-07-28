@@ -1,0 +1,65 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    align-items: center;
+}
+
+#footergap{
+    height: 5em;
+}
+
+body{
+    text-align: center;
+    font:large monospace;
+    color: white;
+    background: url("../images/bar.jpg") fixed;
+    background-size: 100% 100%;
+    padding:0;
+    margin:0;
+}
+
+.part{
+    margin: 0 1.5em 0 1.5em;
+}
+
+h1{
+    margin-top: 4em;
+    font: 3em "lucida handwriting";
+}
+
+#logsign{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:25%;
+    margin: 3em auto;
+}
+
+button{
+    padding:1em;
+    border-radius: 2em;
+    font-family: monospace;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+button:active{
+    transform: scale(0.95);
+    transition: transform 0.25s;
+}

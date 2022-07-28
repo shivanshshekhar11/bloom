@@ -4,4 +4,13 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    header
+      a#heading(href="/posts") Bloom
+      nav
+        a(href="/posts/new") Create A Post
+        a(href="/logout") Log Out
     block content
+    div#footergap
+    footer
+      p.part Copyright 
+      p.part Made with some help from Gaurav Yadav.

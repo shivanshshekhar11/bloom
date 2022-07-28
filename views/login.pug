@@ -1,6 +1,9 @@
-extends layout
-
-block content
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/logsign.css')
+  body
   h1= title
   
   form(method='POST' action='')
@@ -19,3 +22,8 @@ block content
     ul
       for error in errors
         li!= error.msg
+
+  div#footergap
+  footer
+    p.part Copyright 
+    p.part Made with some help from Gaurav Yadav.

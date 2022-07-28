@@ -3,10 +3,6 @@ extends layout
 block content
   h1= title
 
-  p 
-    a(href="/posts/new") Create a new post
-    a(href="/logout") Log out
-
   if user.status === "user"
     p
       a(href="/membership") Become a Member ...
@@ -22,13 +18,13 @@ block content
         p#post-title 
           a(href=post.url) #{post.title}
 
-        p #{post.content}
+        p #{post.content.slice(0,100)}
 
         unless user.status === "user"
             p #[strong By: ]
                 a(href=post.author.url) #{post.author.username}
 
-            p #{post.time}
+            p#time #{post.ago}
 
     else
       li There are no posts.

@@ -1,9 +1,19 @@
-extends layout
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/landing.css')
+  body
+    h1 Welcome to  Bloom
+    h3 A clubhouse where you can chat and open up to fellow members without worry...
 
-block content
-  h1= title
-  h4 A clubhouse where you can open up to your fellow members ...
+    div#logsign
+      button(type='button' disabled=true)
+        a(href="/login") Log In
+      button(type='button' disabled=true) 
+        a(href="/signup") Sign Up
 
-  div 
-    a(href="/login") Log In 
-    a(href="/signup") Sign Up    
+    div#footergap
+    footer
+      p.part Copyright 
+      p.part Made with some help from Gaurav Yadav.

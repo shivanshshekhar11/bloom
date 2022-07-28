@@ -10,8 +10,8 @@ block content
       input#title.form-control(type='text', placeholder='attitude is everything' name='title' required='true' value=(undefined===ptitle ? '' : title) )
 
     div.form-group
-      label(for='Content') Content:
-      input#content.form-control(type='textarea', placeholder='Count your blessings' name='content' rows="5" cols="20" required='true' value=(undefined===content ? '' : content) )
+      label(for='content') Content:
+      textarea#content.form-control(type='textarea', placeholder='as the name suggests ...' name='content' required='true' rows="10" cols="50") #{undefined===content ? '' : content}
 
     button.btn.btn-primary(type='submit') Submit
 

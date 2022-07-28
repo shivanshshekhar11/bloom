@@ -1,8 +1,112 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1em monospace, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  text-align: center;
+  color:white;
+  background: url("../images/club.jpg") fixed;
+  background-size: 100% 100%;
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(0, 195, 255);
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+h1{
+  margin-top: 3em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #023177;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  align-items: center;
+}
+
+#footergap{
+  height: 5em;
+}
+
+#heading, nav, .part{
+  margin: 0 1.5em 0 1.5em;
+}
+
+li{
+  text-align: left;
+  margin: 1.5em 5% 0 5%;
+  width:90%;
+}
+
+input, textarea{
+  width:100%;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  padding:0.5em;
+  border-radius: 1.5em;
+}
+
+form{
+  width:30%;
+  margin:auto;
+  text-align: left;
+}
+
+button{
+  margin: 1em 45% 0 45%;
+  padding:1em;
+  border-radius: 2em;
+  font-family: monospace;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer
+}
+
+button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+button:active{
+  transform: scale(0.95);
+  transition: transform 0.25s;
+}
+
+#cont{
+  width:60%;
+  margin: 2em 20% 2em 20%;
+  text-align: left;
+}
+
+ul{
+  margin: 2em 0 2em 0;
+}
+
+#del{
+  margin:2em 0 2em 0;
+  display:block;
+}
+
+#mem{
+  margin:4em auto;
+}
+
+#time{
+  color:yellow;
 }

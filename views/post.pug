@@ -4,14 +4,14 @@ block content
 
   h1 #{post.title}
 
-  p #[strong Content: ] #{post.content}
+  p#cont #[strong Content: ] #{post.content}
 
   if (user.status === "member" || user.status === "admin")
     p #[strong By: ]
         a(href=post.author.url) #{post.author.username}
 
-    p #{post.time}
+    p#time #{post.ago}
 
   if user.status === "admin"
       p
-        a(href=post.url+'/delete') Delete post
+        a#del(href=post.url+'/delete') Delete post
