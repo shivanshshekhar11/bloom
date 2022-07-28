@@ -73,11 +73,11 @@ router.get("/:username/delete", function(req, res, next){
                 .exec(function(err) {
         
                     if (err) { return next(err); }
-                    
-                User.deleteOne({username: quser[0].username});
-                
-                res.redirect("/users");
             });
+
+            User.deleteOne({username: quser[0].username});
+                
+            res.redirect("/users");
         }
 
         getUser(req, res, next);
