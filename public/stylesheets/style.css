@@ -4,7 +4,7 @@ body {
   padding:0;
   text-align: center;
   color:white;
-  background: url("../images/club.jpg") fixed;
+  background: url("../images/gradient.jpg") fixed;
   background-size: 100% 100%;
 }
 
@@ -19,7 +19,7 @@ h1{
 }
 
 header {
-  background-color: #013277;
+  background-color: #000058;
   position: fixed;
   top: 0;
   width: 100%;
@@ -30,7 +30,7 @@ header {
 }
 
 footer {
-  background-color: #023177;
+  background-color: #000058;
   position: fixed;
   bottom: 0;
   width: 100%;
