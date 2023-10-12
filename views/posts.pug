@@ -17,8 +17,12 @@ block content
 
         p#post-title 
           a(href=post.url) #{post.title}
+ 
+        if post.content.length > 150
+          p #{post.content.slice(0,150)} ...
 
-        p #{post.content.slice(0,100)}
+        else 
+          p #{post.content.slice(0,150)}
 
         unless user.status === "user"
             p #[strong By: ]
